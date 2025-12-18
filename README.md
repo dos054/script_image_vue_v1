@@ -1,5 +1,18 @@
 (CLIP):
+
+```
 pip install transformers torch torchvision
+```
+```
+from transformers import CLIPProcessor, CLIPModel
+
+model_name = "openai/clip-vit-base-patch32"
+
+model = CLIPModel.from_pretrained(model_name)
+processor = CLIPProcessor.from_pretrained(model_name)
+
+print("CLIP ViT-B/32 loaded")
+```
 
 (rembg):
 pip install rembg onnxruntime pillow
