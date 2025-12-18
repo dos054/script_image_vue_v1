@@ -1,21 +1,28 @@
-도커 추가
+(CLIP):
+pip install transformers torch torchvision
 
+(rembg):
+pip install rembg onnxruntime pillow
 
-ollama 설치 (도커허브):
+(Weaviate):
+docker pull semitechnologies/weaviate
 
-docker run -d -v ollama:/root/.ollama -p 11434:11434 --name ollama ollama/ollama
+docker run -d -p 8099:8080 --name weaviate semitechnologies/weaviate:latest
 
-ollama 내부에 한국어 모델 설치 명령어:
+pip install weaviate-client
+
+(Ollama):
+docker run -d -v ollama:/root/.ollama -p 11435:11434 --name ollama ollama/ollama
 
 docker exec -it ollama ollama pull exaone3.5:7.8b
 
+(Python 패키지):
+pip install weaviate-client
 
-weaviate:
+pip install transformers
 
+pip install torch
 
-docker pull semitechnologies/weaviate:1.35.0-rc.0-f8d55cf.arm64
+pip install pillow
 
-weaviate (백터 이미지 백터화):
-
-Weaviate 도커 실행 중 (포트 8099) 
-패키지다운  pip install weaviate-client transformers torch pillow rembg
+pip install rembg
