@@ -34,3 +34,6 @@ pip install rembg
 2. python batch_indexing.py 명령어 실행
    IMAGE_FOLDER = r"C:\_dev5\projects_2v\script_image1\src\main\resources\static\images"
    이부분의 경로를 수정
+3. yes 누르면 시작 (yes나오는 화면까지 시간 좀 걸림)
+<img width="455" height="377" alt="image" src="https://github.com/user-attachments/assets/1facb759-4763-43c5-b35c-51b2be73041e" />
+
