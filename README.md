@@ -26,3 +26,11 @@ pip install torch
 pip install pillow
 
 pip install rembg
+
+백터값 추가 :
+
+1. batch_indexing.py 있는 곳으로 cd 명령어써서 이동
+   
+2. python batch_indexing.py 명령어 실행
+   IMAGE_FOLDER = r"C:\_dev5\projects_2v\script_image1\src\main\resources\static\images"
+   이부분의 경로를 수정
